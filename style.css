@@ -539,7 +539,7 @@ main .box-3 {
 }
 
 #intro img {
-  max-width: 900px; 
+  width: 700px; 
   height: auto;
   margin-top: 20px;
   margin-bottom: 50px;
