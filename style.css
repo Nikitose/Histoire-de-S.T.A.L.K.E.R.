@@ -1,0 +1,895 @@
+/*********************LINK********************/
+
+@import url(//db.onlinewebfonts.com/c/9a630f139df6b300b375f48f9ab52dc6?family=StalkerW00-Regular);
+@import url('https://fonts.cdnfonts.com/css/stalker');
+@import url('https://fonts.cdnfonts.com/css/amaz-stalker');
+
+/*********************BASE********************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+/*********************HEADER********************/
+
+header {
+  top: -110px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  background-image: url("./images/header/fond.jpg");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  z-index: 1;
+}
+
+.fleche img {
+  top: -900px;
+}
+
+/*******GLISH*******/
+
+.hero {
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 120pt;
+  font-family: 'AmazS.T.A.L.K.E.R.v.3.0', sans-serif;
+  color: #ffaa00;
+  z-index: 1;
+}
+
+.fleche img {
+  width: 50px;
+}
+
+/***GLITSH***/
+
+.layers {
+  position: relative;
+}
+/***GLITSH***/
+
+.layers {
+  position: relative;
+}
+
+.layers::before,
+.layers::after {
+  content: attr(data-text);
+  position: absolute;
+  width: 150%;
+  z-index: -1;
+}
+
+.layers::before {
+  top: 10px;
+  left: 15px;
+  color: #fffb00;
+}
+
+.layers::after {
+  top: 5px;
+  left: -10px;
+  color: #ffffff;
+}
+
+.single-path {
+  clip-path: polygon(
+    0% 12%,
+    53% 12%,
+    53% 26%,
+    25% 26%,
+    25% 86%,
+    31% 86%,
+    31% 0%,
+    53% 0%,
+    53% 84%,
+    92% 84%,
+    92% 82%,
+    70% 82%,
+    70% 29%,
+    78% 29%,
+    78% 65%,
+    69% 65%,
+    69% 66%,
+    77% 66%,
+    77% 45%,
+    85% 45%,
+    85% 26%,
+    97% 26%,
+    97% 28%,
+    84% 28%,
+    84% 34%,
+    54% 34%,
+    54% 89%,
+    30% 89%,
+    30% 58%,
+    83% 58%,
+    83% 5%,
+    68% 5%,
+    68% 36%,
+    62% 36%,
+    62% 1%,
+    12% 1%,
+    12% 34%,
+    60% 34%,
+    60% 57%,
+    98% 57%,
+    98% 83%,
+    1% 83%,
+    1% 53%,
+    91% 53%,
+    91% 84%,
+    8% 84%,
+    8% 83%,
+    4% 83%
+  );
+}
+
+.paths {
+  animation: paths 5s step-end infinite;
+}
+
+/***/
+
+@keyframes paths {
+0% {
+  clip-path: polygon(0% 43%,
+    83% 43%,
+    83% 22%,
+    23% 22%,
+    23% 24%,
+    91% 24%,
+    91% 26%,
+    18% 26%,
+    18% 83%,
+    29% 83%,
+    29% 17%,
+    41% 17%,
+    41% 39%,
+    18% 39%,
+    18% 82%,
+    54% 82%,
+    54% 88%,
+    19% 88%,
+    19% 4%,
+    39% 4%,
+    39% 14%,
+    76% 14%,
+    76% 52%,
+    23% 52%,
+    23% 35%,
+    19% 35%,
+    19% 8%,
+    36% 8%,
+    36% 31%,
+    73% 31%,
+    73% 16%,
+    1% 16%,
+    1% 56%,
+    50% 56%,
+    50% 8%
+    );
+}
+
+5% {
+  clip-path: polygon(0% 29%,
+    44% 29%,
+    44% 83%,
+    94% 83%,
+    94% 56%,
+    11% 56%,
+    11% 64%,
+    94% 64%,
+    94% 70%,
+    88% 70%,
+    88% 32%,
+    18% 32%,
+    18% 96%,
+    10% 96%,
+    10% 62%,
+    9% 62%,
+    9% 84%,
+    68% 84%,
+    68% 50%,
+    52% 50%,
+    52% 55%,
+    35% 55%,
+    35% 87%,
+    25% 87%,
+    25% 39%,
+    15% 39%,
+    15% 88%,
+    52% 88%
+    );
+}
+
+30% {
+  clip-path: polygon(0% 53%,
+    93% 53%,
+    93% 62%,
+    68% 62%,
+    68% 37%,
+    97% 37%,
+    97% 89%,
+    13% 89%,
+    13% 45%,
+    51% 45%,
+    51% 88%,
+    17% 88%,
+    17% 54%,
+    81% 54%,
+    81% 75%,
+    79% 75%,
+    79% 76%,
+    38% 76%,
+    38% 28%,
+    61% 28%,
+    61% 12%,
+    55% 12%,
+    55% 62%,
+    68% 62%,
+    68% 51%,
+    0% 51%,
+    0% 92%,
+    63% 92%,
+    63% 4%,
+    65% 4%
+    );
+}
+
+45% {
+  clip-path: polygon(0% 33%,
+    2% 33%,
+    2% 69%,
+    58% 69%,
+    58% 94%,
+    55% 94%,
+    55% 25%,
+    33% 25%,
+    33% 85%,
+    16% 85%,
+    16% 19%,
+    5% 19%,
+    5% 20%,
+    79% 20%,
+    79% 96%,
+    93% 96%,
+    93% 50%,
+    5% 50%,
+    5% 74%,
+    55% 74%,
+    55% 57%,
+    96% 57%,
+    96% 59%,
+    87% 59%,
+    87% 65%,
+    82% 65%,
+    82% 39%,
+    63% 39%,
+    63% 92%,
+    4% 92%,
+    4% 36%,
+    24% 36%,
+    24% 70%,
+    1% 70%,
+    1% 43%,
+    15% 43%,
+    15% 28%,
+    23% 28%,
+    23% 71%,
+    90% 71%,
+    90% 86%,
+    97% 86%,
+    97% 1%,
+    60% 1%,
+    60% 67%,
+    71% 67%,
+    71% 91%,
+    17% 91%,
+    17% 14%,
+    39% 14%,
+    39% 30%,
+    58% 30%,
+    58% 11%,
+    52% 11%,
+    52% 83%,
+    68% 83%
+    );
+}
+
+76% {
+  clip-path: polygon(0% 26%,
+      15% 26%,
+      15% 73%,
+      72% 73%,
+      72% 70%,
+      77% 70%,
+      77% 75%,
+      8% 75%,
+      8% 42%,
+      4% 42%,
+      4% 61%,
+      17% 61%,
+      17% 12%,
+      26% 12%,
+      26% 63%,
+      73% 63%,
+      73% 43%,
+      90% 43%,
+      90% 67%,
+      50% 67%,
+      50% 41%,
+      42% 41%,
+      42% 46%,
+      50% 46%,
+      50% 84%,
+      96% 84%,
+      96% 78%,
+      49% 78%,
+      49% 25%,
+      63% 25%,
+      63% 14%
+      );
+}
+
+90% {
+  clip-path: polygon(0% 41%,
+    13% 41%,
+    13% 6%,
+    87% 6%,
+    87% 93%,
+    10% 93%,
+    10% 13%,
+    89% 13%,
+    89% 6%,
+    3% 6%,
+    3% 8%,
+    16% 8%,
+    16% 79%,
+    0% 79%,
+    0% 99%,
+    92% 99%,
+    92% 90%,
+    5% 90%,
+    5% 60%,
+    0% 60%,
+    0% 48%,
+    89% 48%,
+    89% 13%,
+    80% 13%,
+    80% 43%,
+    95% 43%,
+    95% 19%,
+    80% 19%,
+    80% 85%,
+    38% 85%,
+    38% 62%
+    );
+}
+1%,
+7%,
+33%,
+47%,
+78%,
+93% {
+    clip-path: none;
+  }
+}
+
+.glitch span {
+  animation: paths 3.5s step-end infinite;
+}
+
+/***/
+
+.opacity {
+  animation: opacity 5s step-end infinite;
+}
+
+.font {
+  animation: font 7s step-end infinite;
+}
+
+.glitch::before {
+  animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+    font 8s step-end infinite, movement 20s step-end infinite;
+}
+
+.glitch::after {
+  animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+    font 7s step-end infinite, movement 8s step-end infinite;
+}
+
+/*********************MAIN********************/
+
+/***Le contenue passe au dessus de la banière***/
+.contener-z-2 {
+  z-index: 2;
+  margin-top: 800px;
+  background-color: #ff0000;
+  position: relative;
+}
+
+/***MAIN***/
+
+main {
+  z-index: 2;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 90pt;
+  font-family: 'AmazS.T.A.L.K.E.R.v.3.0', sans-serif;
+  margin: 0px;
+  background-color: #fff;
+  color: #000000;
+  padding: 0 0 0 0;
+}
+
+main h3 {
+  margin: 0;
+}
+
+main p {
+  font-family: 'STALKER1', sans-serif;
+  font-size: 16pt;  
+}
+
+/***box-centre***/
+
+.box-centre {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+/***box-position***/
+
+main .box-1 {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+main .box-2 {
+  flex: 1;
+  margin-left: 10%;
+}
+
+main .box-3 {
+    flex: 1;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+/***PAD***/
+
+.pad {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/******INTRO******/
+
+.intro {
+  background-image: linear-gradient(to bottom, #ffffff, #525645);
+}
+
+.intro p {
+  text-align: center;
+  margin: 0px 25% 30px 25%;
+  font-size: 20pt;
+  font-family: 'STALKER2', sans-serif; 
+}
+
+.intro li {
+  text-align: center;
+  font-size: 19pt;
+  font-family: 'STALKER2', sans-serif; 
+  margin-bottom: 10px;
+}
+
+.intro img {
+  width: 50%; 
+  height: auto;
+  margin-top: 20px;
+  -webkit-box-shadow: 6px 7px 40px 15px rgba(0,0,0,0.86); 
+  box-shadow: 6px 7px 40px 15px rgba(0,0,0,0.86);
+}
+
+/******PARTIE_1******/
+
+.partie-1 img{
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
+}
+
+.partie-1 img:hover {
+  transform:scale(1.01);
+}
+
+.partie-1 h3 {
+  font-size: 35pt;
+  font-family: 'STALKER2', sans-serif; 
+  margin: 0px 0 10px 10%;
+}
+
+.partie-1 .image-1 {
+  max-width: 450px;
+}
+
+.partie-1 .image-2{
+  max-width: 480px;
+}
+
+/***LIVRE***/
+
+.livre {
+  background-image: linear-gradient(to bottom, #e7efff, #1f2a81);
+}
+
+.livre p:last-child {
+  text-align: center;
+  margin: 0 20% 0 20%;
+}
+
+.livre img {
+  transition: all 0.3s ease;
+}
+
+/***FILM***/
+
+.film {
+  background-image: linear-gradient(to bottom, #5e432a, #281c08);
+}
+
+.film img {
+  transition: all 0.3s ease;
+}
+
+.film .image-2 {
+  border: 18px solid #e6ded8;
+}
+
+/******PARTIE_2******/
+
+.partie-2 h3 {
+  text-align: center;
+  font-size: 35pt;
+  font-family: 'STALKER2', sans-serif; 
+}
+
+.partie-2 p {
+  margin: 10px 20% 20px 20%;
+}
+
+/***JEUX***/
+
+.jeux {
+  background-image: linear-gradient(to bottom, #dfdfdf, #353535);
+}
+
+.jeux h2 {
+  margin: 0px;
+}
+
+.jeux p {
+  text-align: center;
+}
+
+.jeux .box-1 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0px 10% 0px 10%;
+}
+
+.jeux .box-1 img {
+  max-width: 30%;
+  max-height: 470px;
+  -webkit-box-shadow: 13px 13px 17px 6px rgba(0,0,0,0.76); 
+  box-shadow: 13px 13px 17px 6px rgba(0,0,0,0.76);
+}
+
+.jeux img {
+  transition: all 0.3s ease;
+}
+
+.jeux .box-1 img:hover {
+  transform:scale(1.02);
+}
+
+/***ZONE***/
+
+.zone {
+  background-image: linear-gradient(to bottom, #8d9478, #3a3e2c);
+}
+
+.zone p {
+  margin: 40px 17% 50px 17%;
+  text-align: center;
+}
+
+.zone img {
+  max-width: 50%; 
+  height: auto;
+  -webkit-box-shadow: 6px 7px 40px 15px rgba(0,0,0,0.86); 
+  box-shadow: 6px 7px 40px 15px rgba(0,0,0,0.86);
+}
+
+/***ANOMALIES***/
+
+.anomalies {
+  background-image: linear-gradient(to bottom, #cecece, #e9e9e9, #ffffff, #ffffff, #fd804f, #e75441, #7293da, #5983dd, #162a4f);
+}
+
+.anomalies p {
+  margin: 40px 19% 50px 19%;
+  text-align: center;
+}
+
+.anomalies img {
+  max-width: 40%; 
+  height: auto;
+  height: auto;
+  margin-bottom: 100px;
+  -webkit-box-shadow: 2px 5px 50px 25px #000000; 
+  box-shadow: 2px 5px 50px 25px #000000;
+  transition: all 1s ease;
+}
+
+.anomalies img:hover {
+  transform:scale(1.04);
+  transition: all 0.3s ease;
+}
+
+/***ARTEFACTS***/
+
+.artefacts {
+  background-image: linear-gradient(to bottom, #f8fff2, #103e0a);
+}
+
+.artefacts h3 {
+  text-align: left;
+  margin: 0px 0 15px 10%;
+}
+
+.artefacts p {
+  margin: 20px 0px 50px 0px;
+}
+
+.artefacts img {
+  max-width: 500px;
+  -webkit-box-shadow: 6px 7px 40px 15px rgba(0,0,0,0.86); 
+  box-shadow: 6px 7px 40px 15px rgba(0,0,0,0.86);
+  transition: all 0.3s ease;
+}
+
+.artefacts img:hover {
+  transform:scale(1.01);
+}
+
+/***MUTANTS***/
+
+.mutants {
+  background-image: linear-gradient(to bottom, #ffffff, #797979);
+}
+
+.mutants img {
+  margin-top: 20px;
+  max-width: 700px;
+  -webkit-box-shadow: 5px 5px 50px 11px #000000; 
+  box-shadow: 5px 5px 50px 11px #000000;
+}
+
+.mutants p {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.couleur-font-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.couleur-font-1 img:hover {
+  transform:scale(1.05);
+}
+
+/***FRACTIONS***/
+
+.fractions {
+  background-image: linear-gradient(to bottom, #ffffff, #797979);
+}
+
+.fractions .box-centre img {
+  max-width: 25%;
+}
+
+.fractions p {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 70px;
+}
+
+.images-aparaissante {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  max-width: 35%;
+  margin: 0 auto;
+}
+
+.images-aparaissante img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.images-aparaissante img.visible {
+  opacity: 1;
+}
+
+/******PARTIE_3******/
+
+.partie-3 h3 {
+  text-align: center;
+  font-size: 38pt;
+  font-family: 'STALKER2', sans-serif; 
+  margin-bottom: 10px;
+}
+
+.partie-3 p {
+  margin: 0px 20% 0px 20%;
+  text-align: center;
+}
+
+.partie-3-intro {
+  padding: 20px 17% 30px 17%;
+  font-size: 25px;
+  background-image: linear-gradient(to bottom, #ffffff, #e7e7e7);
+  margin: 0 !important;
+}
+
+/***LIVRES***/
+
+.livres {
+  padding-top: 70px;
+  background-image: linear-gradient(to bottom, #ffffff, #c2c2c2);
+}
+
+.livres p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/***STAY OUT***/
+
+.stay-out {
+  background-image: linear-gradient(to bottom, #ececec, #c4c4c4);
+}
+
+.stay-out p {
+  margin-bottom: 40px;
+}
+
+.stay-out .premiere {
+  max-width: 20%;
+}
+
+.stay-out img {
+  max-width: 40%;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 5px 5px 50px 11px #000000; 
+  box-shadow: 5px 5px 50px 11px #000000;
+}
+
+/***DAY Z***/
+
+.day-z {
+  background-image: linear-gradient(to bottom, #ececec, #c4c4c4);
+}
+
+.day-z img {
+  max-width: 40%;
+  margin-top: 50px;
+  -webkit-box-shadow: 5px 5px 50px 11px #000000; 
+  box-shadow: 5px 5px 50px 11px #000000;
+}
+
+/***STALKER STRICK***/
+
+.stalker-strick {
+  background-image: linear-gradient(to bottom, #ffffff, #5f5f5f);
+}
+
+.stalker-strick img {
+  margin-top: 55px;
+  -webkit-box-shadow: 5px 5px 50px 20px #000000; 
+  box-shadow: 5px 5px 50px 20px #000000;
+}
+
+.stalker-strick .horisontale {
+  max-width: 45%;
+}
+
+.stalker-strick .verticale {
+  max-width: 23%;
+}
+
+/***STALKER 2***/
+
+.stalker-2 {
+  background-image: linear-gradient(to bottom, #ffffff, #3b3b3b);
+}
+
+.stalker-2 h3 {
+  margin-bottom: 50px;
+  text-align: start;
+  margin: 0 0 0 10%;
+}
+
+.stalker-2 p {
+  font-size: 20pt;
+  margin: 0 7% 60px 7%;
+}
+
+.stalker-2 .baniere {
+  max-width: 85%;
+}
+
+.image-fin {
+  margin-top: 80px;
+  max-width: 50%;
+  -webkit-box-shadow: 5px 5px 50px 20px #000000; 
+  box-shadow: 5px 5px 50px 20px #000000;
+}
+
+/***FOOTER***/
+
+footer {
+  padding: 20px 0 20px 0;
+  background-color: #fff;
+}
+
+/*créé-par*/
+.from{
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  font-size: 13pt;
+}
